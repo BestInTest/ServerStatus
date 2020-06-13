@@ -1,0 +1,9 @@
+name: ServerStatus
+main: me.BestInTest.ServerStatus.Main
+author: BestInTest
+version: 1.0
+commands:
+  status:
+    description: Pokazuje status sesji serwera
+  atps:
+    description: Pokazuje statystyki tpsu serwera

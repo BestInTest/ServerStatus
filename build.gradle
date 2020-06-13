@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'me.BestInTest'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly files ('D:/projekty/Silniki/Spigot-1.15.2.jar')
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'pl.hackcode.xarlen.main.main'
+    }
+    baseName = project.name
+    from { configurations.compile.collect { it.itDirectory() ? it : zipTree (it) } }
+    with jar
+}
