@@ -1,7 +1,7 @@
 name: ServerStatus
 main: me.BestInTest.ServerStatus.Main
 author: BestInTest
-version: 1.0
+version: 1.1
 commands:
   status:
     description: Pokazuje status sesji serwera

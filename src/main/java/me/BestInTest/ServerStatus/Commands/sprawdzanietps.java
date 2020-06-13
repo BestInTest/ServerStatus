@@ -12,8 +12,7 @@ public class sprawdzanietps implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         sender.sendMessage(ChatFix.fixColor("&8---------{&a&lSERVERSTATUS&8}---------"));
         sender.sendMessage(ChatFix.fixColor("&7Aktualny TPS: &9") + CurrentTPS.getTPS());
-        sender.sendMessage(ChatFix.fixColor("&7TPS: &a") + MinecraftServer.getServer().recentTps);
-        sender.sendMessage(ChatFix.fixColor("&7Tick time: &a") + MinecraftServer.TICK_TIME);
+        sender.sendMessage(ChatFix.fixColor("&7Aktualny tick: &a") + MinecraftServer.currentTick);
         sender.sendMessage(ChatFix.fixColor("&8---------{&a&lSERVERSTATUS&8}---------"));
         return false;
     }
