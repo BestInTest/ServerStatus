@@ -1,9 +1,11 @@
 name: ServerStatus
 main: me.BestInTest.ServerStatus.Main
 author: BestInTest
-version: 1.1
+version: 1.2
 commands:
   status:
     description: Pokazuje status sesji serwera
   atps:
     description: Pokazuje statystyki tpsu serwera
+  diskcheck:
+    description: Sprawdzanie miejsca na dysku
